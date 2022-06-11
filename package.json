@@ -1,0 +1,24 @@
+{
+  "name": "rsschool-nodejs-file-manager",
+  "version": "1.0.0",
+  "description": "Homework assignment \"File manager\" for course on Node.js in RSSchool",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneStepCloser/rsschool-nodejs-file-manager.git"
+  },
+  "keywords": [
+    "rsschool",
+    "nodejs"
+  ],
+  "author": "OneStepCloser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneStepCloser/rsschool-nodejs-file-manager/issues"
+  },
+  "homepage": "https://github.com/OneStepCloser/rsschool-nodejs-file-manager#readme"
+}
