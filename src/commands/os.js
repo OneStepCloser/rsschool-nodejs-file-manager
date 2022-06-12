@@ -16,7 +16,15 @@ export default function runOSCommand(flag) {
             break;
         }
         case Flag.CPUS: {
-            console.log(cpus());
+            const data = cpus();
+
+            const formattedDataArr = data.map((cpuInfo) => ({
+                model: cpuInfo.model,
+                speed: `${cpuInfo.speed / 1000} GHz`,
+            }));
+
+            console.log(`Overall count: ${data.length}`);
+            console.log(formattedDataArr);
             break;
         }
         case Flag.HOMEDIR: {
