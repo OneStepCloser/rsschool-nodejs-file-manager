@@ -73,8 +73,8 @@ function asyncLaunchCommand(commandName, argsArray) {
                     throw new Error(INVALID_INPUT_ERROR_MSG);
                 }
 
-                compress(argsArray[0], argsArray[1], pwd);
-                resolve();
+                compress(argsArray[0], argsArray[1], pwd).then(resolve, reject);
+
                 break;
             }
             case 'decompress': {
@@ -82,8 +82,8 @@ function asyncLaunchCommand(commandName, argsArray) {
                     throw new Error(INVALID_INPUT_ERROR_MSG);
                 }
 
-                decompress(argsArray[0], argsArray[1], pwd);
-                resolve();
+                decompress(argsArray[0], argsArray[1], pwd).then(resolve, reject);
+
                 break;
             }
             case 'hash': {
